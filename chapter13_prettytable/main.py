@@ -13,6 +13,7 @@ from pokemon_data import pokemon_data
 table = PrettyTable()
 
 table.field_names = ["번호", "이름", "타입"]
-table.add_row([1, "이상해씨", "풀/독"])
+example1 = (1, "이상해씨", "풀/독")
+table.add_row(pokemon_data[0])
 
 print(table)
