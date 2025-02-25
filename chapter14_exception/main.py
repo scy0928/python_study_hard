@@ -412,24 +412,24 @@ vars(객체명) : 객체의 속성명 - 값을 dictionary의 키 - 값 쌍으로
 
 '''
 # 객체를 dictionary로 변환
-profile = vars(person1)
-try :
-    attribute2 = input("출력할 속성명을 입력하세요>>>>")
-    # for key in profile:  #딕셔너리에서 반복문 돌리면 key만 튀어나옵니다.
-    #     print(key)       #value를 조회하기 위해서는 추가적으로 작성해야만 했습니다.
-    #     print(profile[key])
-    if attribute2 in profile :   # profile의 key 중에 attribute2와 일치하는 것이 있는 것을 묻는 조건문
-        print("정상출력이 가능합니다.")
-    else:
-        raise KeyError
-except KeyError as e:
-    print(e)
-    print("존재하지 않는 속성입니다.")
-except Exception as e:
-    print(e)
-    print("예측할 수 없는 예외가 발생했습니다.")
-else:
-    print(f"{attribute2}의 속성값은 : {profile[attribute2]}입니다.")
-finally:
-    print("프로그램이 종료하겠습니다.")
+# profile = vars(person1)
+# try :
+#     attribute2 = input("출력할 속성명을 입력하세요>>>>")
+#     # for key in profile:  #딕셔너리에서 반복문 돌리면 key만 튀어나옵니다.
+#     #     print(key)       #value를 조회하기 위해서는 추가적으로 작성해야만 했습니다.
+#     #     print(profile[key])
+#     if attribute2 in profile :   # profile의 key 중에 attribute2와 일치하는 것이 있는 것을 묻는 조건문
+#         print("정상출력이 가능합니다.")
+#     else:
+#         raise KeyError
+# except KeyError as e:
+#     print(e)
+#     print("존재하지 않는 속성입니다.")
+# except Exception as e:
+#     print(e)
+#     print("예측할 수 없는 예외가 발생했습니다.")
+# else:
+#     print(f"{attribute2}의 속성값은 : {profile[attribute2]}입니다.")
+# finally:
+#     print("프로그램이 종료하겠습니다.")
 
